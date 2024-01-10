@@ -1,0 +1,16 @@
+def palindrome(check_palindrome):
+    # แปลงสตริงเป็นตัวพิมพ์เล็กทั้งหมดและลบอักขระที่ไม่ใช่ตัวอักษร
+    check_palindrome = ''.join(filter(str.isalnum, check_palindrome.lower()))
+
+    return check_palindrome == check_palindrome[::-1]
+
+repeat = "y"
+
+while repeat == "y":
+    word = input("Input your word to check palindrome : ")
+
+    result = palindrome(word)
+    if result:
+        print("Palindrome")
+    else:
+        print("Not Palindrome")
