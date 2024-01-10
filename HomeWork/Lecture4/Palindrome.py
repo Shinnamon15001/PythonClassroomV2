@@ -8,9 +8,13 @@ repeat = "y"
 
 while repeat == "y":
     word = input("Input your word to check palindrome : ")
-
     result = palindrome(word)
+    
     if result:
         print("Palindrome")
     else:
         print("Not Palindrome")
+    
+    repeat = input("Do you want to repeat? : ")
+
+
