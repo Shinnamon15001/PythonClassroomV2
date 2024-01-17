@@ -1,0 +1,129 @@
+<mxfile host="65bd71144e">
+    <diagram id="Wb5gFryuFgNgaLtcXvXm" name="Page-1">
+        <mxGraphModel dx="4465" dy="2413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Start&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" y="-560" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;End&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" y="640" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="4" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="repeat = &quot;y&quot;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" y="-440" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="6" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="6" target="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-800" y="-200"/>
+                            <mxPoint x="-800" y="600"/>
+                            <mxPoint x="-480" y="600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="repeat == &quot;y&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" y="-240" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="7" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-500" y="-320" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="10" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&quot;Input your word to check palindrome : &quot;&lt;br&gt;word" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" y="-120" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="12" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="result = palindrome(word)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="14" target="17">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-680" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="14" target="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-280" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="result" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" y="120" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="16" target="21">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-280" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="Palindrome" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-360" y="240" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="17" target="21">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-680" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="Not Palindrome" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-760" y="240" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;strokeColor=#F0F0F0;fontSize=14;fillColor=#176661;" edge="1" parent="1" source="21" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-500" y="360" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="27" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;palindrome&lt;br&gt;(check_palindrome)&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-40" y="-560" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" edge="1" parent="1" source="28" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="check_palindrome = ''.join(filter(str.isalnum, check_palindrome.lower()))" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-40" y="-440" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;return check_palindrome == check_palindrome[::-1]&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-40" y="-320" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;strokeColor=#F0F0F0;fontSize=14;fillColor=#176661;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="32" target="7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-200" y="80" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-480" y="560"/>
+                            <mxPoint x="-160" y="560"/>
+                            <mxPoint x="-160" y="-300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="&quot;Do you want to &lt;br&gt;repeat? : &quot;&lt;br&gt;repeat" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;fontSize=14;fillColor=#176661;strokeColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="-560" y="440" width="160" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
