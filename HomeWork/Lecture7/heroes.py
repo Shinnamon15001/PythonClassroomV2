@@ -1,3 +1,5 @@
+import pickle
+
 heroes = []
 
 def display_heroes():
@@ -5,34 +7,33 @@ def display_heroes():
         print("No heroes to display.")
     else:
         print("Heroes:")
-        for index, hero in enumerate(heroes, start=1):
-            print(f"- {hero}")
+        for hero in heroes:
+            print(hero)
 
 def add_hero():
-    hero_names = input("Enter the names of the heroes to add (separated by spaces): ").split()
-    heroes.extend(hero_names)
-    print(f"{', '.join(hero_names)} have been added to the list.")
+    hero_name = input("Enter the name of the hero to add: ")
+    heroes.append(hero_name)
+    print(f"{hero_name} has been added to the list.")
     save_to_file()
 
 def insert_hero():
-    index = int(input("Enter the position to insert the heroes: ")) - 1
-    hero_names = input("Enter the names of the heroes to insert (separated by spaces): ").split()
-    heroes[index:index] = hero_names
-    print(f"{', '.join(hero_names)} have been inserted at position {index + 1}.")
+    index = int(input("Enter the position to insert the hero: "))
+    hero_name = input("Enter the name of the hero to insert: ")
+    heroes.insert(index, hero_name)
+    print(f"{hero_name} has been inserted at position {index}.")
     save_to_file()
 
 def remove_hero():
     if not heroes:
         print("No heroes to remove.")
     else:
-        display_heroes()
-        hero_to_remove = input("Enter the name of the hero to remove: ")
-        if hero_to_remove in heroes:
-            heroes.remove(hero_to_remove)
-            print(f"{hero_to_remove} has been removed from the list.")
+        hero_name = input("Enter the name of the hero to remove: ")
+        if hero_name in heroes:
+            heroes.remove(hero_name)
+            print(f"{hero_name} has been removed from the list.")
             save_to_file()
         else:
-            print(f"{hero_to_remove} not found in the list.")
+            print(f"{hero_name} not found in the list.")
 
 def display_sorted_heroes():
     if not heroes:
@@ -42,25 +43,23 @@ def display_sorted_heroes():
         sorted_heroes = sorted(heroes, reverse=(sort_order == 'desc'))
         print(f"Sorted Heroes ({sort_order}ending):")
         for hero in sorted_heroes:
-            print(f"- {hero}")
+            print(hero)
 
 def save_to_file():
-    with open("heroes.txt", 'w') as file:
-        for hero in heroes:
-            file.write(hero + '\n')
-    print("Heroes have been saved to 'heroes.txt'.")
+    with open("heroes.pkl", 'wb') as file:
+        pickle.dump(heroes, file)
+    print("Heroes have been saved to 'heroes.pkl'.")
 
 def load_from_file():
     global heroes
     try:
-        with open("heroes.txt", 'r') as file:
-            heroes = [line.strip() for line in file]
-        print("Heroes have been loaded from 'heroes.txt'.")
+        with open("heroes.pkl", 'rb') as file:
+            heroes = pickle.load(file)
+        print("Heroes have been loaded from 'heroes.pkl'.")
     except FileNotFoundError:
-        print("File 'heroes.txt' not found. Starting with an empty list of heroes.")
+        print("File 'heroes.pkl' not found. Starting with an empty list of heroes.")
         heroes = []
 
-# Load heroes from file at the beginning
 load_from_file()
 
 while True:
